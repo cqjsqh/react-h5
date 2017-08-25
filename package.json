@@ -4,7 +4,9 @@
   "description": "mobile",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "cross-env NODE_ENV=development node build/dev.js",
+    "build": "cross-env NODE_ENV=production node build/prod.js",
+    "lint": "eslint src --ext .js --format 'node_modules/eslint-friendly-formatter'"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,36 @@
   "bugs": {
     "url": "https://github.com/cqjsqh/react-h5/issues"
   },
-  "homepage": "https://github.com/cqjsqh/react-h5#readme"
+  "homepage": "https://github.com/cqjsqh/react-h5#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-plugin-html": "^3.2.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.3.0",
+    "eventsource-polyfill": "^0.9.6",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^2.30.1",
+    "http-proxy-middleware": "^0.17.4",
+    "ip": "^1.1.5",
+    "opn": "^5.1.0",
+    "ora": "^1.3.0",
+    "shelljs": "^0.7.8",
+    "webpack": "^3.5.5",
+    "webpack-dev-middleware": "^1.12.0",
+    "webpack-hot-middleware": "^2.18.2",
+    "webpack-merge": "^4.1.0"
+  },
+  "dependencies": {
+    "react": "^15.6.1"
+  }
 }
