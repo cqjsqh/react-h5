@@ -1,0 +1,19 @@
+{
+  "name": "react-h5",
+  "version": "1.0.0",
+  "description": "mobile",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cqjsqh/react-h5.git"
+  },
+  "author": "cqjsqh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cqjsqh/react-h5/issues"
+  },
+  "homepage": "https://github.com/cqjsqh/react-h5#readme"
+}
