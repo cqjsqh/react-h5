@@ -1,7 +1,8 @@
 #### 启动
-
+```
 npm install
 npm run dev
+```
 
 #### 目录结构
 ```
